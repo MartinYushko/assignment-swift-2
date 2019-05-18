@@ -18,13 +18,15 @@ func printSums(in array: [Int], withSum target: Int) {
             print("(\(newArray[leftPointer]), \(newArray[rightPointer]))")
             leftPointer = leftPointer + 1
             rightPointer = rightPointer - 1
+        }
             
         //if the pointers have found a pair higher than target, have right pointer point to a smaller integer
-        } else if newArray[leftPointer] + newArray[rightPointer] > target {
+        else if newArray[leftPointer] + newArray[rightPointer] > target {
             rightPointer = rightPointer - 1
-            
+        }
+        
         //if the pointers have found a pair lower than target, have left pointer point to a larger integer
-        } else if newArray[leftPointer] + newArray[rightPointer] < target {
+        else if newArray[leftPointer] + newArray[rightPointer] < target {
             leftPointer = leftPointer + 1
         }
     } while(leftPointer < rightPointer)
