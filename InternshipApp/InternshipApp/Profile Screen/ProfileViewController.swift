@@ -23,12 +23,9 @@ class ProfileViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         populateData()
-       
     }
     
     func populateData() {
@@ -72,7 +69,6 @@ extension ProfileViewController: UICollectionViewDataSource {
             }
             
             return cell
-            
         }
         
         return UICollectionViewCell()

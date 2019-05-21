@@ -7,9 +7,6 @@
 //
 
 
-
-// THIS WAS LARGELY COPIED FROM A YOUTUBE VIDEO - I DID NOT COME UP WITH THIS ANIMATION TECHNIQUE
-
 import UIKit
 
 class CircularTransition: NSObject {
@@ -116,6 +113,5 @@ extension CircularTransition:UIViewControllerAnimatedTransitioning {
         let size = CGSize(width: offestVector, height: offestVector)
         
         return CGRect(origin: CGPoint.zero, size: size)
-        
     }
 }

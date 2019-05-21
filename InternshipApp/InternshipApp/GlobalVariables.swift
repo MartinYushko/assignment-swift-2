@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 struct GlobalVariables {
+    
     static var trending: [FoodData] = [
         FoodData(name: "Martin Yushko", foodName: "Borscht", image: UIImage(named: "borscht"), description: "Borscht is a Ukrainean soup. The red color is achieved by the addition of beets and to enchance the flavor, sour cream is often added and mixed in prior to consumption. This is among the most popular soviet/russian/ukrainean soups."),
         

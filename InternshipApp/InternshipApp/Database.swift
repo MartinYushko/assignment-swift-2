@@ -21,7 +21,6 @@ struct FoodData {
         self.foodImage = image
         self.foodDescription = description
     }
-    
 }
 
 struct Profile {

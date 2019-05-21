@@ -254,7 +254,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chef Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qy2-bg-gow">
-                                                    <rect key="frame" x="0.0" y="120" width="95" height="18.5"/>
+                                                    <rect key="frame" x="0.0" y="120" width="95" height="19"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -284,9 +284,8 @@
                                     <outlet property="delegate" destination="DJM-aV-9om" id="bcV-r5-Fht"/>
                                 </connections>
                             </collectionView>
-                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VwM-23-wiM">
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VwM-23-wiM">
                                 <rect key="frame" x="320" y="44" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="i7U-HT-bfi" kind="show" identifier="showFoodDescription" id="LXV-pB-qTf"/>
@@ -303,16 +302,20 @@
                         <constraints>
                             <constraint firstItem="MXt-ww-uq5" firstAttribute="centerX" secondItem="XBb-Pq-3Nu" secondAttribute="centerX" id="2d8-Ej-3PH"/>
                             <constraint firstItem="1km-D1-6XL" firstAttribute="trailing" secondItem="rr0-cb-78m" secondAttribute="trailing" constant="36" id="6P0-0P-k2L"/>
+                            <constraint firstItem="VwM-23-wiM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1km-D1-6XL" secondAttribute="leading" symbolic="YES" id="BSc-lS-q1M"/>
                             <constraint firstItem="fhd-ha-Yw6" firstAttribute="leading" secondItem="1km-D1-6XL" secondAttribute="leading" constant="36" id="FR8-ai-VJF"/>
+                            <constraint firstItem="VwM-23-wiM" firstAttribute="trailing" secondItem="zvW-Sb-ncb" secondAttribute="trailing" id="FYE-Ap-lUk"/>
                             <constraint firstItem="1km-D1-6XL" firstAttribute="trailing" secondItem="zvW-Sb-ncb" secondAttribute="trailing" constant="48" id="Jcb-qp-C9t"/>
                             <constraint firstItem="rr0-cb-78m" firstAttribute="top" secondItem="MXt-ww-uq5" secondAttribute="bottom" constant="36" id="Kzq-ym-7gC"/>
                             <constraint firstItem="2TD-Tc-Agr" firstAttribute="centerX" secondItem="XBb-Pq-3Nu" secondAttribute="centerX" id="Ucp-OE-FCL"/>
+                            <constraint firstItem="1km-D1-6XL" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fhd-ha-Yw6" secondAttribute="trailing" symbolic="YES" id="WUU-v4-2mM"/>
                             <constraint firstItem="zvW-Sb-ncb" firstAttribute="leading" secondItem="1km-D1-6XL" secondAttribute="leading" constant="48" id="ZWs-yS-tIv"/>
                             <constraint firstItem="1km-D1-6XL" firstAttribute="bottom" secondItem="zvW-Sb-ncb" secondAttribute="bottom" id="a7a-4a-lSC"/>
                             <constraint firstItem="2TD-Tc-Agr" firstAttribute="top" secondItem="1km-D1-6XL" secondAttribute="top" constant="44" id="o58-lx-Qvv"/>
                             <constraint firstItem="MXt-ww-uq5" firstAttribute="top" secondItem="2TD-Tc-Agr" secondAttribute="bottom" constant="18" id="qPU-LX-jWt"/>
                             <constraint firstItem="zvW-Sb-ncb" firstAttribute="top" secondItem="fhd-ha-Yw6" secondAttribute="bottom" constant="22" id="uVI-cr-EYJ"/>
                             <constraint firstItem="fhd-ha-Yw6" firstAttribute="top" secondItem="rr0-cb-78m" secondAttribute="bottom" constant="36" id="vLw-ho-Xpm"/>
+                            <constraint firstItem="VwM-23-wiM" firstAttribute="top" secondItem="1km-D1-6XL" secondAttribute="top" id="vad-Qp-cbz"/>
                             <constraint firstItem="rr0-cb-78m" firstAttribute="leading" secondItem="1km-D1-6XL" secondAttribute="leading" constant="36" id="xvd-PV-rfx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1km-D1-6XL"/>
@@ -443,6 +446,6 @@
         <image name="profileImage" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bZM-89-fDi"/>
+        <segue reference="LXV-pB-qTf"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -42,7 +42,6 @@ class FoodDescriptionViewController: UIViewController {
                 GlobalVariables.user.favorites?.append(FoodData(name: self.chefName ?? "", foodName: self.foodName ?? "", image: self.foodImage, description: self.foodDescription ?? ""))
             }
         })
-        
     }
     
     var hasAddedToFavorites: Bool = false {
@@ -72,5 +71,4 @@ class FoodDescriptionViewController: UIViewController {
         foodDescriptionLabel.text = foodDescription
         chefNameLabel.text = chefName
     }
-
 }

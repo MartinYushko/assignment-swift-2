@@ -114,17 +114,14 @@
 			isa = PBXGroup;
 			children = (
 				202666D72291E1B00036E0D5 /* AppDelegate.swift */,
-				202666D92291E1B00036E0D5 /* ViewController.swift */,
 				202666DB2291E1B00036E0D5 /* Main.storyboard */,
-				202667132293A0360036E0D5 /* FavoritesCollectionViewCell.swift */,
-				2026671122939B6B0036E0D5 /* ProfileViewController.swift */,
-				2026670F22939A260036E0D5 /* CircularTransition.swift */,
-				2026670D22938EE30036E0D5 /* FoodDescriptionViewController.swift */,
-				202667072291E52A0036E0D5 /* TableViewFoodCell.swift */,
+				202667162293B4AF0036E0D5 /* Profile Screen */,
+				202667152293B4830036E0D5 /* Main Screen */,
+				202667172293B4C70036E0D5 /* Food Description Screen */,
 				202666DE2291E1B70036E0D5 /* Assets.xcassets */,
 				202666E02291E1B70036E0D5 /* LaunchScreen.storyboard */,
-				202667052291E51F0036E0D5 /* CollectionViewFoodCell.swift */,
 				202666E32291E1B70036E0D5 /* Info.plist */,
+				2026670F22939A260036E0D5 /* CircularTransition.swift */,
 				202667092291E74E0036E0D5 /* Database.swift */,
 				2026670B2291E90B0036E0D5 /* GlobalVariables.swift */,
 			);
@@ -147,6 +144,33 @@
 				202666F92291E1B70036E0D5 /* Info.plist */,
 			);
 			path = InternshipAppUITests;
+			sourceTree = "<group>";
+		};
+		202667152293B4830036E0D5 /* Main Screen */ = {
+			isa = PBXGroup;
+			children = (
+				202666D92291E1B00036E0D5 /* ViewController.swift */,
+				202667052291E51F0036E0D5 /* CollectionViewFoodCell.swift */,
+				202667072291E52A0036E0D5 /* TableViewFoodCell.swift */,
+			);
+			path = "Main Screen";
+			sourceTree = "<group>";
+		};
+		202667162293B4AF0036E0D5 /* Profile Screen */ = {
+			isa = PBXGroup;
+			children = (
+				2026671122939B6B0036E0D5 /* ProfileViewController.swift */,
+				202667132293A0360036E0D5 /* FavoritesCollectionViewCell.swift */,
+			);
+			path = "Profile Screen";
+			sourceTree = "<group>";
+		};
+		202667172293B4C70036E0D5 /* Food Description Screen */ = {
+			isa = PBXGroup;
+			children = (
+				2026670D22938EE30036E0D5 /* FoodDescriptionViewController.swift */,
+			);
+			path = "Food Description Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
