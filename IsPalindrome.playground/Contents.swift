@@ -1,4 +1,4 @@
-func isPalindrom(for str: String) -> Bool {
+func isPalindrome(for str: String) -> Bool {
     let chars = Array(str)
     
     if chars.count == 0 {
@@ -6,7 +6,7 @@ func isPalindrom(for str: String) -> Bool {
         return false
     }
     
-    for i in 0...chars.count/2 {
+    for i in 0...chars.count/2 - 1 {
         // as soon as asymmetry is detected, return false
         if chars[i] != chars[chars.count-i-1] {
             return false
@@ -18,5 +18,5 @@ func isPalindrom(for str: String) -> Bool {
 }
 
 
-let myString = "hello"
-print(isPalindrom(for: myString))
+let myString = "raceaar"
+print(isPalindrome(for: myString))
